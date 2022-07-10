@@ -51,11 +51,11 @@ main {
     padding: 25px;
 }
 
-.misc-card {
+.announcement-card {
     padding: 5px;
 }
 
-.misc-card > div {
+.announcement-card > div {
     font-size: 1.2rem;
     font-weight: bolder;
 }
@@ -67,7 +67,7 @@ main {
 
 #misc {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: max-content max-content;
     gap: 15px;
 }
 
@@ -166,7 +166,10 @@ input {
 }
 .large {
     height: 75px;
+    width: 75px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 #user-name {
     display: grid;
     align-items: center;
@@ -205,4 +208,24 @@ input {
 .btn:hover {
     background-color: white;
     color: #7c3aed;
+}
+
+
+.trend-card {
+    padding-bottom: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 75px 1fr;
+}
+
+.trend-card > span {
+    margin: auto 0;
+}
+
+.trend-card>span > span {
+    font-weight: bold;
+}
+
+.trend-card:last-child {
+    padding-bottom: 0;
 }
