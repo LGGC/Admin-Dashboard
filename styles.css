@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    min-width: fit-content;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -31,14 +33,14 @@ main {
     grid-column: 2 / 3;
 
     background-color: #e5e5e5;
-    gap: 20px;
+    gap: 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 30px;
     overflow-y: scroll;
 }
 
-.misc-text {
+.main-text {
     display: grid;
     gap: 15px;
     grid-template-rows: min-content auto;
@@ -60,7 +62,7 @@ main {
     font-weight: bolder;
 }
 
-.misc-text > span {
+.main-text > span {
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -229,3 +231,44 @@ input {
 .trend-card:last-child {
     padding-bottom: 0;
 }
+
+#project-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, minmax(450px, 550px));
+    grid-auto-rows: min-content;
+}
+
+
+.project {
+    border-left: 7px solid tomato;
+    display: grid;
+    gap: 50px;
+    
+    grid-template-rows: 1fr max-content;
+}
+
+#actions {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+
+}
+
+.project > div > div{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.project > div > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+p {
+     margin: 0;
+     padding: 0;
+ }
+
