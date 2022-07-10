@@ -20,6 +20,9 @@ header {
 
     display: grid;
     grid-template-rows: 1fr 2fr;
+
+    padding: 0 50px;
+    
 }
 
 main {
@@ -27,6 +30,9 @@ main {
     grid-column: 2 / 3;
 
     background-color: #e5e5e5;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 #sidebar {
@@ -76,4 +82,85 @@ main {
 
 .option > i, .option > span{
     font-size: 2rem;
+}
+
+#upper-section {
+    display: grid;
+    grid-template-columns: 8fr 50px 50px 1fr;
+    gap: 23px;
+    padding: 10px 0;
+}
+
+#upper-section > span {
+    text-align: center;
+    font-size: 1.7rem;
+    display: grid;
+    align-items: center;
+}
+
+
+#search {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: max-content 80%;
+    align-items: center;
+}
+
+#search > span {
+    font-size: 1.7rem;
+    
+}
+
+input {
+    background-color: #e5e5e5;
+    border: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.profile {
+    background-image: url(./profiles/Zion.jpeg);
+    background-size: cover;
+    border-radius: 25px;
+    width: auto;
+}
+
+#user-name {
+    display: grid;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#lower-section {
+    display: grid;
+    grid-template-columns: 125px 4fr 7% 7% 7%;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+#welcome {
+    margin: auto 0;
+    font-weight: bolder;
+}
+
+#welcome > span {
+    font-size: 1.6rem;
+}
+
+.btn {
+    height: fit-content;
+    margin: auto 0;
+    padding: 10px 5px;
+    background-color: #7c3aed;
+    border: 1px solid #7c3aed;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #7c3aed;
 }

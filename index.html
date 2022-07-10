@@ -20,11 +20,38 @@
       .material-symbols-outlined {
         font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
       }
+
+      .no-fill {
+        font-variation-settings: "FILL" 0;
+      }
     </style>
     <title>Dashboard</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div id="upper-section">
+        <div id="search">
+          <span class="material-symbols-outlined">search</span
+          ><input type="search" />
+        </div>
+
+        <span class="material-symbols-outlined no-fill"
+          >notifications_active</span
+        >
+
+        <div class="profile"></div>
+        <div id="user-name">Liran Goldman</div>
+      </div>
+      <div id="lower-section">
+        <div class="profile"></div>
+        <div id="welcome">
+          Hi there,<br /><span>Liran Goldman (@Zion)</span>
+        </div>
+        <button class="btn">New</button>
+        <button class="btn">Upload</button>
+        <button class="btn">Share</button>
+      </div>
+    </header>
 
     <div id="sidebar">
       <div id="title">
@@ -61,6 +88,9 @@
       </div>
     </div>
 
-    <main></main>
+    <main>
+      <div></div>
+      <div></div>
+    </main>
   </body>
 </html>
